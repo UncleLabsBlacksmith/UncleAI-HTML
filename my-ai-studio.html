@@ -29,6 +29,9 @@
 }
 *,*::before,*::after{box-sizing:inherit}
 [hidden]{display:none!important}
+.credit{font-size:12px;color:var(--muted);text-align:center;padding:6px 0 0}
+.credit a{color:var(--accent);text-decoration:none}
+.credit a:hover{text-decoration:underline}
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--ink);font:15px/1.65 var(--font);overflow:hidden}
 button,input,textarea,select{font:inherit;color:inherit}
@@ -292,6 +295,7 @@ textarea#prompt:focus{border-color:var(--accent)}
     <nav class="chats" id="chatList" aria-label="ประวัติแชท"></nav>
     <div class="side-foot">
       <button id="openSettings"><span>ตั้งค่า</span><span class="keystate" id="keyState">ยังไม่มี API Key</span></button>
+      <div class="credit">Develop by <a href="https://uncle-engineer.com/" target="_blank" rel="noopener">Uncle Engineer</a></div>
     </div>
   </aside>
   <div class="scrim" id="scrim"></div>
@@ -410,6 +414,7 @@ textarea#prompt:focus{border-color:var(--accent)}
     <div class="go">
       <button class="gen" id="genBtn" type="button" disabled>สร้างรูป</button>
       <div class="row2"><span id="costHint"></span><button class="linkbtn" id="iOpenSettings" type="button">ตั้งค่า · <span class="keystate" id="iKeyState">ยังไม่มี API Key</span></button></div>
+      <div class="credit">Develop by <a href="https://uncle-engineer.com/" target="_blank" rel="noopener">Uncle Engineer</a></div>
     </div>
   </aside>
 
